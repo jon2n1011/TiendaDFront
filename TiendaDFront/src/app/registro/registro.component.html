@@ -1,0 +1,12 @@
+<form #formulario="ngForm" (ngSubmit)="submit()">
+	<input type="text" name="nombre" placeholder="Nombre de mascota" [(ngModel)]="register.name">
+	<br><br>
+    <input type="password" name="password" placeholder="password" [(ngModel)]="register.password">
+	<br><br>
+    <input type="password" name="repeatPass" placeholder="repeatPass" [(ngModel)]="register.repeatPass">
+	<br><br>
+    <input type="email" name="email" placeholder="Email" [(ngModel)]="register.email">
+    <br><br>
+
+	<button type="submit">Guardar</button>
+</form>

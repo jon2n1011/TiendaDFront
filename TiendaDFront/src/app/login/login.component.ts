@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
   listaAlgo: string[]=[];
   constructor(private http:HttpClient) {
    //Aqui es lo que se ejecut al principio
-  let x=this.http.get<ConfigService>("https://localhost:44383/api/ordenes",{observe:'response',responseType:'json'});
+  
   }
 
   public login() {
